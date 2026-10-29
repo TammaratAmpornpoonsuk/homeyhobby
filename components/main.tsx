@@ -1,4 +1,4 @@
-import { main, navLink } from "@/lib/homey";
+import { main } from "@/lib/homey";
 import logo from "../public/projects/logo.svg";
 import Image from "next/image";
 
@@ -8,9 +8,9 @@ export function Main() {
       <Image
         src={logo}
         alt="Logo"
-        className="max-w-sm h-auto md:max-w-lg lg:max-w-xl animate-float"
+        className="max-w-xs h-auto md:max-w-lg lg:max-w-xl animate-float"
       />
-      <p className="text-foreground max-w-2xl text-center font-medium">
+      <p className="text-foreground max-w-xs text-center font-medium md:max-w-2xl">
         {main.description}
       </p>
     </div>
